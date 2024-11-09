@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Validate email format
-        if (email && !email.value.includes('.com')) {
+        // Updated email validation to accept .edu domains
+        if (email && !email.value.includes('.com') && !email.value.includes('.edu')) {
             email.classList.add('error');
             containsErrors = true;
         } else if (email) {
