@@ -1,0 +1,413 @@
+/* Reset default browser padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for the fixed navigation bar at the top */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Flex container for the navigation bar links */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Add or update these styles in your CSS file */
+.theme-button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.theme-button:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles - ensuring the text turn white when in dark mode */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #000000;
+}
+
+.dark-mode a {
+    color: #ffffff;
+}
+
+.dark-mode .stat-item,
+.dark-mode .person-item,
+.dark-mode .petition-para,
+.dark-mode .signatures,
+.dark-mode .contact-section
+.dark-mode .sign-petition {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode form input,
+.dark-mode form textarea {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #555;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.dark-mode .footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark-mode .footer a {
+    color: #ffffff;
+}
+
+.dark-mode #sign-petition {
+    color: #ffffff; /* This makes the form text white */
+}
+
+.dark-mode #sign-petition label {
+    color: #ffffff; /* This specifically targets the labels */
+}
+
+.dark-mode #sign-petition input {
+    background-color: #333;
+    color: #ffffff; /* This makes the input text white */
+    border-color: #555;
+}
+
+.dark-mode #sign-petition button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+}
+
+/* Hover state for button in dark mode */
+.dark-mode #sign-petition button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for placeholder text in dark mode */
+.dark-mode #sign-petition input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Style for focused inputs in dark mode */
+.dark-mode #sign-petition input:focus {
+    background-color: #444;
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Error state in dark mode */
+.dark-mode #sign-petition .error {
+    background-color: #662626;
+    border-color: #ff4444;
+}
+
+/* Individual list item styling within the navbar */
+.navbar ul li {
+    margin: 0 15px;
+}
+
+/* Navbar link styling */
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Hover effect for navbar links */
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Main content area with vertical alignment and spacing */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; /* Offset for fixed navbar */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Intro section heading and subheading styles */
+.intro-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Intro section paragraph styling */
+.intro-section p {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Styling for navigation buttons */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Travel Stats section styling */
+.stats-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Flex container for statistical items */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Individual statistical item styling */
+.stat-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Styling for the People Stories section */
+.people-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Flex container for people profiles */
+.people-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Individual profile item styling */
+.person-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Contact form section styling */
+.contact-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Contact form styling */
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input fields styling for the contact form */
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Styling for the submit button */
+.contact-section button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Hover effect for submit button */
+.contact-section button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Video container styling */
+.video-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Adjustments to make sure footer is accessible */
+.content-container {
+    padding-bottom: 80px; /* Add padding so footer doesn't overlap */
+}
+
+/* Style for images in the stats section */
+.stat-image {
+    width: 100%;             /* Makes the image take up the full width of its container */
+    max-width: 180px;         /* Sets a maximum width for larger screens */
+    height: auto;             /* Maintains aspect ratio */
+    border-radius: 8px;       /* Adds rounded corners */
+    margin-bottom: 10px;      /* Adds space below the image */
+}
+
+/* Dark mode styling */
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Petition section layout */
+.petition-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* Petition paragraph and signatures styling */
+.petition-para {
+    width: 55%;
+    padding-right: 10px;
+}
+
+.signatures {
+    width: 45%;
+}
+
+/* Error styling for invalid form inputs */
+.error {
+    border: 2px solid red;
+    background: pink;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .stat-image {
+        max-width: 150px;    /* Reduce size on smaller screens */
+    }
+}
+
+
+
+/* Responsive design adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Stack navbar links vertically on small screens */
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    /* Adjust main content top margin for navbar height on small screens */
+    .content-container {
+        margin-top: 140px; /* Adjust for navbar height */
+    }
+
+    /* Stack items in stats and people containers vertically on small screens */
+    .stats-container,
+    .people-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
