@@ -377,6 +377,60 @@ button:hover {
     width: 45%;
 }
 
+/* Style for the petition form inputs to match contact form */
+#sign-petition {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#sign-petition input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#sign-petition button[type="button"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sign-petition button[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Keep the error state styling */
+#sign-petition input.error {
+    border: 2px solid red;
+    background-color: pink;
+}
+
+/* Add labels styling for consistency */
+#sign-petition label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Dark mode adjustments */
+.dark-mode #sign-petition input {
+    background-color: #333;
+    color: #ffffff;
+    border-color: #555;
+}
+
+.dark-mode #sign-petition input::placeholder {
+    color: #aaaaaa;
+}
+
 /* Error styling for invalid form inputs */
 .error {
     border: 2px solid red;
