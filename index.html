@@ -109,7 +109,38 @@
                 </div>
             </section>
 
-              
+            <!-- Petition section where users can sign a petition -->
+        <section id="petition" class="petition">
+            <h2>Sign Our Petition 📢</h2>
+            <div class="petition-container">
+                <div class="petition-para">
+                    <p>Support global cultural awareness initiatives. Sign your name to join our movement!</p>
+                </div>
+                <div class="signatures">
+                    <p>🖊️ DJ from Brooklyn supports this.</p>
+                    <p>🖊️ Amy from Queens supports this.</p>
+                    <p>🖊️ Teresa from Harlem supports this.</p>
+                </div>
+            </div>
+
+            <!-- Petition form to collect name, hometown, and email -->
+            <form id="sign-petition">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+                
+                <label for="hometown">Hometown:</label>
+                <input type="text" id="hometown" required />
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+                
+                <!-- Button to submit the form -->
+                <button type="button" id="sign-now-button">Sign Now</button>
+            </form>
+            
+            <!-- Counter to track the total number of signatures -->
+            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+        </section>
 
 
             <!-- Contact form section for users to get in touch -->
