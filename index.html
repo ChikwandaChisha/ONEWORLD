@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chikwanda_Chisha_AdvocacyProject - ONEWORLD</title>
+        <!-- Link to external CSS file for styling -->
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Link to favicon icon -->
+        <link rel="icon" href="globe.png" type="image/png">
+        <!-- Link to external JavaScript file -->
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- Navigation Bar at the top of the page -->
+        <header class="navbar">
+            <ul>
+                <!-- Links in the navbar for easy navigation -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#people">People</a></li>
+                <li><a href="#travel-stats">Travel Stats</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- This is the dark mode toggle button -->
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+            </ul>
+        </header>
+
+        <!-- Main content area of the website -->
+        <main class="content-container">
+            
+            <!-- Introduction Section for the website -->
+            <section id="home" class="intro-section">
+                <h1>ONEWORLD</h1>
+                <h3>Different people, different stories, yet ONEWORLD</h3>
+                
+                <!-- Buttons to navigate to Stories and People sections -->
+                <div class="buttons">
+                    <button type="button" onclick="location.href='#stories'">Explore Stories</button>
+                    <button type="button" onclick="location.href='#people'">Meet People</button>
+                </div>
+
+                <!-- Description of the website's purpose -->
+                <p>ONEWORLD is a place of community and connection. Here you learn about the cultures and traditions of other people in different parts of the world. You will also be able to travel to countries that appeal to you most through us! We can help you with that over here.</p>
+                
+                <!-- External link to related resources -->
+                <p>For more information on cultural awareness, visit <a href="https://www.unesco.org/en/cultural-awareness" target="_blank">UNESCO's Cultural Awareness page</a>.</p>
+
+                <!-- Embedded Video about cultural exchange -->
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube-nocookie.com/embed/AJXiiwyxwE0"
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                
+            </section>
+
+            <!-- Travel and Cultural Knowledge Stats Section -->
+            <section id="travel-stats" class="stats-section">
+                <h2>Travel and Cultural Knowledge Stats</h2>
+                <div class="stats-container">
+                    <!-- Cultural Awareness Graph Image -->
+                    <div class="stat-item">
+                        <img src="diversity.png" alt="Cultural Awareness Graph" class="stat-image">
+                        <h4>Average Cultural Awareness</h4>
+                        <p>Statistics on how culturally aware travelers are globally.</p>
+                    </div>
+                    
+                    <!-- Popular Destinations Chart Image -->
+                    <div class="stat-item">
+                        <img src="diverese_flags.png" alt="Popular Destinations Chart" class="stat-image">
+                        <h4>Popular Travel Destinations</h4>
+                        <p>Top countries people visit based on cultural appeal and familiarity.</p>
+                    </div>
+                    
+                    <!-- Increase in Cultural Exchange Image -->
+                    <div class="stat-item">
+                        <img src="scenic_travel.jpg" alt="Scenic Travel Destination" class="stat-image">
+                        <h4>Increase in Cultural Exchange</h4>
+                        <p>Insights on the rise of cultural exchange and understanding.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <!-- People Stories Section -->
+            <section id="people" class="people-section">
+                <h2>People and Their Stories</h2>
+                <p>Explore stories of individuals from various cultures around the world.</p>
+                <div class="people-container">
+                    <!-- Placeholder profiles for different people and their stories -->
+                    <div class="person-item">
+                        <h4>John Doe</h4>
+                        <p>John shares his experiences growing up in diverse communities.</p>
+                    </div>
+                    <div class="person-item">
+                        <h4>Mary Smith</h4>
+                        <p>Mary discusses the traditions and values of her culture.</p>
+                    </div>
+                    <div class="person-item">
+                        <h4>Aisha Khan</h4>
+                        <p>Aisha tells about her travels and the cultures she’s encountered.</p>
+                    </div>
+                </div>
+            </section>
+
+              
+
+
+            <!-- Contact form section for users to get in touch -->
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Get in touch for more information on how to explore the world with us.</p>
+                <!-- Contact form with input fields for name, email, and message -->
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer with external links for more resources -->
+        <footer class="footer">
+            <p>Explore More Resources:</p>
+            <ul>
+                <li><a href="https://www.unesco.org" target="_blank">UNESCO</a></li>
+                <li><a href="https://www.culturalsurvival.org/" target="_blank">Cultural Survival</a></li>
+                <li><a href="https://www.globalgiving.org/" target="_blank">Global Giving</a></li>
+            </ul>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
