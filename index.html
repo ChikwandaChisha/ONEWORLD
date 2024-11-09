@@ -7,7 +7,7 @@
         <!-- Link to external CSS file for styling -->
         <link rel="stylesheet" href="styles.css" />
         <!-- Link to favicon icon -->
-        <link rel="icon" href="images/globe.png" type="image/png">
+        <link rel="icon" href="globe.png" type="image/png">
         <!-- Link to external JavaScript file -->
         <script type="text/javascript" src="script.js"></script>
     </head>
@@ -66,21 +66,21 @@
                 <div class="stats-container">
                     <!-- Cultural Awareness Graph Image -->
                     <div class="stat-item">
-                        <img src="images/diversity.png" alt="Cultural Awareness Graph" class="stat-image">
+                        <img src="diversity.png" alt="Cultural Awareness Graph" class="stat-image">
                         <h4>Average Cultural Awareness</h4>
                         <p>Statistics on how culturally aware travelers are globally.</p>
                     </div>
                     
                     <!-- Popular Destinations Chart Image -->
                     <div class="stat-item">
-                        <img src="images/diverese_flags.png" alt="Popular Destinations Chart" class="stat-image">
+                        <img src="diverese_flags.png" alt="Popular Destinations Chart" class="stat-image">
                         <h4>Popular Travel Destinations</h4>
                         <p>Top countries people visit based on cultural appeal and familiarity.</p>
                     </div>
                     
                     <!-- Increase in Cultural Exchange Image -->
                     <div class="stat-item">
-                        <img src="images/scenic_travel.jpg" alt="Scenic Travel Destination" class="stat-image">
+                        <img src="scenic_travel.jpg" alt="Scenic Travel Destination" class="stat-image">
                         <h4>Increase in Cultural Exchange</h4>
                         <p>Insights on the rise of cultural exchange and understanding.</p>
                     </div>
@@ -110,18 +110,21 @@
             </section>
 
               <!-- Petition section where users can sign a petition -->
-        <section id="petition" class="petition">
-            <h2>Sign Our Petition 📢</h2>
-            <div class="petition-container">
-                <div class="petition-para">
-                    <p>Support global cultural awareness initiatives. Sign your name to join our movement!</p>
+            <section id="petition" class="petition">
+                <h2>Sign Our Petition 📢</h2>
+                <!-- Move counter here, right after the heading -->
+                <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
+    
+                <div class="petition-container">
+                    <div class="petition-para">
+                        <p>Support global cultural awareness initiatives. Sign your name to join our movement!</p>
+                    </div>
+                    <div class="signatures">
+                        <p>🖊️ DJ from Brooklyn supports this.</p>
+                        <p>🖊️ Amy from Queens supports this.</p>
+                        <p>🖊️ Teresa from Harlem supports this.</p>
+                    </div>
                 </div>
-                <div class="signatures">
-                    <p>🖊️ DJ from Brooklyn supports this.</p>
-                    <p>🖊️ Amy from Queens supports this.</p>
-                    <p>🖊️ Teresa from Harlem supports this.</p>
-                </div>
-            </div>
 
             <!-- Petition form to collect name, hometown, and email -->
             <form id="sign-petition">
@@ -138,8 +141,6 @@
                 <button type="button" id="sign-now-button">Sign Now</button>
             </form>
             
-            <!-- Counter to track the total number of signatures -->
-            <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
         </section>
 
 
