@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Chikwanda_Chisha_AdvocacyProject - ONEWORLD</title>
+        <!-- Google Fonts: Lato -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
         <!-- Link to external CSS file for styling -->
         <link rel="stylesheet" href="styles.css" />
         <!-- Link to favicon icon -->
@@ -23,12 +25,12 @@
                 <li><a href="#travel-stats">Travel Stats</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <!-- This is the dark mode toggle button -->
-                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <li><button id="theme-button" class="btn btn-toggle">Toggle Dark Mode</button></li>
             </ul>
         </header>
 
         <!-- Main content area of the website -->
-        <main class="content-container">
+        <main class="content-container max-width">
             
             <!-- Introduction Section for the website -->
             <section id="home" class="intro-section">
@@ -37,8 +39,8 @@
                 
                 <!-- Buttons to navigate to Stories and People sections -->
                 <div class="buttons">
-                    <button type="button" onclick="location.href='#stories'">Explore Stories</button>
-                    <button type="button" onclick="location.href='#people'">Meet People</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='#stories'">Explore Stories</button>
+                    <button type="button" class="btn btn-secondary" onclick="location.href='#people'">Meet People</button>
                 </div>
 
                 <!-- Description of the website's purpose -->
@@ -49,37 +51,37 @@
 
                 <!-- Embedded Video about cultural exchange -->
                 <div class="video-container">
-                    <iframe width="560" height="315" 
-                        src="https://www.youtube-nocookie.com/embed/AJXiiwyxwE0"
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
+                    <iframe 
+                        width="768" height="433" 
+                        src="https://www.youtube.com/embed/1ZcJcL-c-68" 
+                        title="How Travel Changes Your World View" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                     </iframe>
                 </div>
                 
             </section>
 
             <!-- Travel and Cultural Knowledge Stats Section -->
-            <section id="travel-stats" class="stats-section">
+            <section id="travel-stats" class="stats-section card-section">
                 <h2>Travel and Cultural Knowledge Stats</h2>
                 <div class="stats-container">
                     <!-- Cultural Awareness Graph Image -->
-                    <div class="stat-item">
+                    <div class="stat-item card">
                         <img src="images/diversity.png" alt="Cultural Awareness Graph" class="stat-image">
                         <h4>Average Cultural Awareness</h4>
                         <p>Statistics on how culturally aware travelers are globally.</p>
                     </div>
                     
                     <!-- Popular Destinations Chart Image -->
-                    <div class="stat-item">
+                    <div class="stat-item card">
                         <img src="images/diverese_flags.png" alt="Popular Destinations Chart" class="stat-image">
                         <h4>Popular Travel Destinations</h4>
                         <p>Top countries people visit based on cultural appeal and familiarity.</p>
                     </div>
                     
                     <!-- Increase in Cultural Exchange Image -->
-                    <div class="stat-item">
+                    <div class="stat-item card">
                         <img src="images/scenic_travel.jpg" alt="Scenic Travel Destination" class="stat-image">
                         <h4>Increase in Cultural Exchange</h4>
                         <p>Insights on the rise of cultural exchange and understanding.</p>
@@ -89,33 +91,33 @@
             
 
             <!-- People Stories Section -->
-            <section id="people" class="people-section">
+            <section id="people" class="people-section card-section">
                 <h2>People and Their Stories</h2>
                 <p>Explore stories of individuals from various cultures around the world.</p>
                 <div class="people-container">
                     <!-- Placeholder profiles for different people and their stories -->
-                    <div class="person-item">
+                    <div class="person-item card">
                         <h4>John Doe</h4>
                         <p>John shares his experiences growing up in diverse communities.</p>
                     </div>
-                    <div class="person-item">
+                    <div class="person-item card">
                         <h4>Mary Smith</h4>
                         <p>Mary discusses the traditions and values of her culture.</p>
                     </div>
-                    <div class="person-item">
+                    <div class="person-item card">
                         <h4>Aisha Khan</h4>
-                        <p>Aisha tells about her travels and the cultures she’s encountered.</p>
+                        <p>Aisha tells about her travels and the cultures she's encountered.</p>
                     </div>
                 </div>
             </section>
 
               <!-- Petition section where users can sign a petition -->
-            <section id="petition" class="petition">
+            <section id="petition" class="petition card-section">
                 <h2>Sign Our Petition 📢</h2>
                 <!-- Move counter here, right after the heading -->
                 <p id="counter">🖊️ 3 people have signed this petition and support this cause.</p>
     
-                <div class="petition-container">
+                <div class="petition-container card">
                     <div class="petition-para">
                         <p>Support global cultural awareness initiatives. Sign your name to join our movement!</p>
                     </div>
@@ -129,31 +131,31 @@
             <!-- Petition form to collect name, hometown, and email -->
             <form id="sign-petition">
                 <label for="name">Name:</label>
-                <input type="text" id="name" required />
+                <input type="text" id="name" required class="input-field" />
                 
                 <label for="hometown">Hometown:</label>
-                <input type="text" id="hometown" required />
+                <input type="text" id="hometown" required class="input-field" />
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" required />
+                <input type="email" id="email" required class="input-field" />
                 
                 <!-- Button to submit the form -->
-                <button type="button" id="sign-now-button">Sign Now</button>
+                <button type="button" id="sign-now-button" class="btn btn-primary">Sign Now</button>
             </form>
             
         </section>
 
 
             <!-- Contact form section for users to get in touch -->
-            <section id="contact" class="contact-section">
+            <section id="contact" class="contact-section card-section">
                 <h2>Contact Us</h2>
                 <p>Get in touch for more information on how to explore the world with us.</p>
                 <!-- Contact form with input fields for name, email, and message -->
                 <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <input type="text" placeholder="Name" required class="input-field">
+                    <input type="email" placeholder="Email" required class="input-field">
+                    <textarea placeholder="Message" required class="input-field"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </section>
         </main>
