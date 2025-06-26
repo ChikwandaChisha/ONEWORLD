@@ -5,50 +5,216 @@
     box-sizing: border-box;
 }
 
-/* Styling for the fixed navigation bar at the top */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+/* 1. Use Lato font for the whole site */
+body, html {
+    font-family: 'Lato', Arial, sans-serif;
+    background: #f7f9fb;
+    color: #222;
 }
 
-/* Flex container for the navigation bar links */
+/* 2. Max-width container for main content */
+.max-width {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 3. Card style for sections and items */
+.card, .card-section {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+    margin: 32px 0;
+}
+
+.card-section {
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+}
+
+/* 4. Buttons */
+.btn {
+    border: none;
+    border-radius: 24px;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.btn-primary {
+    background: #007BFF;
+    color: #fff;
+}
+.btn-primary:hover {
+    background: #0056b3;
+}
+.btn-secondary {
+    background: #e3e8f0;
+    color: #007BFF;
+}
+.btn-secondary:hover {
+    background: #cfd8e3;
+}
+.btn-toggle {
+    background: #222;
+    color: #fff;
+    border: 1px solid #007BFF;
+}
+.btn-toggle:hover {
+    background: #007BFF;
+    color: #fff;
+}
+
+/* 5. Input fields */
+.input-field {
+    border: 1.5px solid #cfd8e3;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 8px 0 20px 0;
+    font-size: 1rem;
+    width: 100%;
+    background: #f7f9fb;
+    transition: border 0.2s;
+}
+.input-field:focus {
+    border-color: #007BFF;
+    outline: none;
+    background: #fff;
+}
+
+/* 6. Section spacing and headings */
+section {
+    margin-bottom: 48px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 16px;
+}
+p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+/* 7. Navbar improvements */
+.navbar {
+    background: #222;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
 .navbar ul {
-    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.navbar ul li a {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+.navbar ul li a:hover {
+    background: #007BFF;
+    color: #fff;
+}
+
+/* 8. Stats, people, and petition containers */
+.stats-container, .people-container {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.stat-item.card, .person-item.card {
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 320px;
+    margin: 12px;
+    text-align: center;
+}
+.stat-image {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+/* 9. Petition section highlight */
+.petition.card-section {
+    background: linear-gradient(90deg, #e3e8f0 0%, #f7f9fb 100%);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 32px 24px;
+}
+
+/* 10. Responsive design */
+@media (max-width: 900px) {
+    .max-width {
+        padding: 0 12px;
+    }
+    .stats-container, .people-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .card, .stat-item.card, .person-item.card {
+        max-width: 100%;
+    }
+}
+
+/* 11. Footer improvements */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 32px 0 16px 0;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+    margin-top: 48px;
+}
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: 700;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 12. Video container */
+.video-container {
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    margin: 32px 0;
+}
+.video-container iframe {
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-/* Add or update these styles in your CSS file */
-.theme-button {
-    padding: 8px 15px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    margin: 0 10px;
+/* 13. Miscellaneous */
+::-webkit-scrollbar {
+    width: 8px;
+    background: #e3e8f0;
 }
-
-.theme-button:hover {
-    background-color: #0056b3;
+::-webkit-scrollbar-thumb {
+    background: #cfd8e3;
+    border-radius: 8px;
 }
 
 /* Dark Mode Styles - ensuring the text turn white when in dark mode */
 .dark-mode {
-    background-color: #1a1a1a;
-    color: #ffffff;
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
 }
 
 .dark-mode .navbar {
-    background-color: #000000;
+    background-color: #111 !important;
 }
 
 .dark-mode a {
@@ -86,12 +252,12 @@
 }
 
 .dark-mode .footer {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #111 !important;
+    color: #f1f1f1 !important;
 }
 
 .dark-mode .footer a {
-    color: #ffffff;
+    color: #4da3ff !important;
 }
 
 .dark-mode #sign-petition {
@@ -215,48 +381,6 @@ button:hover {
     text-align: center;
 }
 
-/* Flex container for statistical items */
-.stats-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-/* Individual statistical item styling */
-.stat-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-}
-
-/* Styling for the People Stories section */
-.people-section {
-    margin-top: 40px;
-    text-align: center;
-}
-
-/* Flex container for people profiles */
-.people-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    gap: 20px;
-}
-
-/* Individual profile item styling */
-.person-item {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-}
-
 /* Contact form section styling */
 .contact-section {
     margin-top: 40px;
@@ -354,8 +478,62 @@ button:hover {
 
 /* Dark mode styling */
 .dark-mode {
-    background-color: #000;
-    color: #fff;
+    background-color: #181a1b !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .navbar {
+    background-color: #111 !important;
+}
+
+.dark-mode .card, .dark-mode .card-section, .dark-mode .petition.card-section {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25) !important;
+}
+.dark-mode .stat-item.card, .dark-mode .person-item.card {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+}
+.dark-mode .btn, .dark-mode button, .dark-mode .btn-primary {
+    background: #007BFF !important;
+    color: #fff !important;
+    border: none !important;
+}
+.dark-mode .btn-secondary {
+    background: #444 !important;
+    color: #fff !important;
+}
+.dark-mode .btn-toggle {
+    background: #23272b !important;
+    color: #fff !important;
+    border: 1px solid #007BFF !important;
+}
+.dark-mode .btn-toggle:hover {
+    background: #007BFF !important;
+    color: #fff !important;
+}
+.dark-mode .input-field, .dark-mode input, .dark-mode textarea {
+    background: #23272b !important;
+    color: #f1f1f1 !important;
+    border-color: #555 !important;
+}
+.dark-mode .input-field:focus {
+    background: #181a1b !important;
+    border-color: #007BFF !important;
+}
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode p, .dark-mode label {
+    color: #f1f1f1 !important;
+}
+.dark-mode .footer {
+    background-color: #111 !important;
+    color: #f1f1f1 !important;
+}
+.dark-mode .footer a {
+    color: #4da3ff !important;
+}
+.dark-mode .stat-image {
+    filter: brightness(0.85) contrast(1.1);
 }
 
 /* Petition section layout */
@@ -443,8 +621,6 @@ button:hover {
         max-width: 150px;    /* Reduce size on smaller screens */
     }
 }
-
-
 
 /* Responsive design adjustments for smaller screens */
 @media (max-width: 768px) {
