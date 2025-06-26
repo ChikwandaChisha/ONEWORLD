@@ -30,10 +30,10 @@ ONEWORLD is a web project dedicated to promoting global cultural awareness, conn
 
 ## Contributing
 We welcome contributions! Please fork the repo and submit a pull request.
-
 ## License
 This project is for educational and advocacy purposes.
 
 ## Author
 Chikwanda Chisha
 
+## P.S: I have not done the backend for the project.
