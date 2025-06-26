@@ -9,8 +9,6 @@ ONEWORLD is a web project dedicated to promoting global cultural awareness, conn
 - **Petition**: Sign and support global cultural awareness initiatives.
 - **Contact Form**: Get in touch for more information or collaboration.
 
-## Demo
-![ONEWORLD Screenshot](images/globe.png)
 
 ## Getting Started
 
